@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.6)  17 JAN 2023 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.6)  17 JAN 2023 17:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -925,7 +925,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 50
  (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<images/eth_logo.pdf, id=47, 8857.09pt x 2400.97pt>
+<images/eth_logo.pdf, id=23, 8857.09pt x 2400.97pt>
 File: images/eth_logo.pdf Graphic file (type pdf)
 <use images/eth_logo.pdf>
 Package pdftex.def Info: images/eth_logo.pdf  used on input line 50.
@@ -934,7 +934,7 @@ Package pdftex.def Info: images/eth_logo.pdf  used on input line 50.
 Overfull \vbox (10.27916pt too high) detected at line 50
  []
 
-<images/rsl_logo.pdf, id=48, 544.43402pt x 213.19649pt>
+<images/rsl_logo.pdf, id=24, 544.43402pt x 213.19649pt>
 File: images/rsl_logo.pdf Graphic file (type pdf)
 <use images/rsl_logo.pdf>
 Package pdftex.def Info: images/rsl_logo.pdf  used on input line 50.
@@ -966,12 +966,12 @@ Overfull \hbox (105.9677pt too wide) in paragraph at lines 50--50
 [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/lfierz/studium/master/SP/Report/images/eth_logo.pdf> </Users/lfierz/studium/master/SP/Report/images/rsl_logo.pdf>]
-<images/declaration/or_rep.png, id=68, 598.235pt x 1021.8175pt>
+<images/declaration/or_rep.png, id=44, 598.235pt x 1021.8175pt>
 File: images/declaration/or_rep.png Graphic file (type png)
 <use images/declaration/or_rep.png>
 Package pdftex.def Info: images/declaration/or_rep.png  used on input line 63.
 (pdftex.def)             Requested size: 388.84814pt x 664.17352pt.
-<images/declaration/prop.png, id=70, 594.22pt x 990.70125pt>
+<images/declaration/prop.png, id=46, 594.22pt x 990.70125pt>
 File: images/declaration/prop.png Graphic file (type png)
 <use images/declaration/prop.png>
 Package pdftex.def Info: images/declaration/prop.png  used on input line 64.
@@ -1010,254 +1010,45 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] (/Users/lfierz/studium/master/SP/Report/chapters/abstract.tex) [7
 
 
+] (/Users/lfierz/studium/master/SP/Report/chapters/introduction.tex
+Chapter 1.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.94 \clearpage
+                [1
+
+
 ] (/Users/lfierz/studium/master/SP/Report/report.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 25.
 
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.121 \clearpage
-                 [1
+) [2
 
 
-] (/Users/lfierz/studium/master/SP/Report/chapters/appendix_plots.tex
-Appendix A.
-<images/comparison_appendix/pose_orb.png, id=116, 1586.92876pt x 846.16125pt>
-File: images/comparison_appendix/pose_orb.png Graphic file (type png)
-<use images/comparison_appendix/pose_orb.png>
-Package pdftex.def Info: images/comparison_appendix/pose_orb.png  used on input line 8.
-(pdftex.def)             Requested size: 396.73122pt x 211.5398pt.
-
-Overfull \hbox (35.38123pt too wide) in paragraph at lines 8--9
- [][] 
- []
-
-[2
-
-
-
- </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/pose_orb.png>]
-<images/comparison_appendix/steps_orb.png, id=123, 1568.86125pt x 848.16875pt>
-File: images/comparison_appendix/steps_orb.png Graphic file (type png)
-<use images/comparison_appendix/steps_orb.png>
-Package pdftex.def Info: images/comparison_appendix/steps_orb.png  used on input line 16.
-(pdftex.def)             Requested size: 392.21436pt x 212.04166pt.
-
-Overfull \hbox (30.86436pt too wide) in paragraph at lines 16--17
- [][] 
- []
-
-<images/comparison_appendix/pose_error_orb.png, id=124, 1637.11626pt x 870.25125pt>
-File: images/comparison_appendix/pose_error_orb.png Graphic file (type png)
-<use images/comparison_appendix/pose_error_orb.png>
-Package pdftex.def Info: images/comparison_appendix/pose_error_orb.png  used on input line 23.
-(pdftex.def)             Requested size: 409.27806pt x 217.56227pt.
-
-Overfull \hbox (47.92807pt too wide) in paragraph at lines 23--24
- [][] 
- []
-
-[3
-
- </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/steps_orb.png> </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/pose_error_orb.png>]
-<images/comparison_appendix/step_error_orb.png, id=133, 1633.10126pt x 885.3075pt>
-File: images/comparison_appendix/step_error_orb.png Graphic file (type png)
-<use images/comparison_appendix/step_error_orb.png>
-Package pdftex.def Info: images/comparison_appendix/step_error_orb.png  used on input line 31.
-(pdftex.def)             Requested size: 408.27432pt x 221.32632pt.
-
-Overfull \hbox (46.92433pt too wide) in paragraph at lines 31--32
- [][] 
- []
-
-[4
-
- </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/step_error_orb.png>]
-<images/comparison_appendix/pose_brisk.png, id=140, 1595.9625pt x 862.22125pt>
-File: images/comparison_appendix/pose_brisk.png Graphic file (type png)
-<use images/comparison_appendix/pose_brisk.png>
-Package pdftex.def Info: images/comparison_appendix/pose_brisk.png  used on input line 45.
-(pdftex.def)             Requested size: 398.98965pt x 215.55478pt.
-
-Overfull \hbox (37.63966pt too wide) in paragraph at lines 45--46
- [][] 
- []
-
-<images/comparison_appendix/steps_brisk.png, id=141, 1627.07875pt x 865.2325pt>
-File: images/comparison_appendix/steps_brisk.png Graphic file (type png)
-<use images/comparison_appendix/steps_brisk.png>
-Package pdftex.def Info: images/comparison_appendix/steps_brisk.png  used on input line 52.
-(pdftex.def)             Requested size: 406.76869pt x 216.30759pt.
-
-Overfull \hbox (45.4187pt too wide) in paragraph at lines 52--53
- [][] 
- []
-
-<images/comparison_appendix/pose_error_brisk.png, id=142, 1676.2625pt x 886.31125pt>
-File: images/comparison_appendix/pose_error_brisk.png Graphic file (type png)
-<use images/comparison_appendix/pose_error_brisk.png>
-Package pdftex.def Info: images/comparison_appendix/pose_error_brisk.png  used on input line 59.
-(pdftex.def)             Requested size: 419.0646pt x 221.57727pt.
-
-Overfull \hbox (57.71461pt too wide) in paragraph at lines 59--60
- [][] 
- []
-
-<images/comparison_appendix/step_error_brisk.png, id=143, 1655.18375pt x 891.33pt>
-File: images/comparison_appendix/step_error_brisk.png Graphic file (type png)
-<use images/comparison_appendix/step_error_brisk.png>
-Package pdftex.def Info: images/comparison_appendix/step_error_brisk.png  used on input line 66.
-(pdftex.def)             Requested size: 413.79492pt x 222.83195pt.
-
-Overfull \hbox (52.44493pt too wide) in paragraph at lines 66--67
- [][] 
- []
-
-[5
-
- </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/pose_brisk.png> </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/steps_brisk.png>] [6 </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/pose_error_brisk.png> </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/step_error_brisk.png>]
-<images/results/pose_klt.png, id=161, 1441.385pt x 771.88374pt>
-File: images/results/pose_klt.png Graphic file (type png)
-<use images/results/pose_klt.png>
-Package pdftex.def Info: images/results/pose_klt.png  used on input line 77.
-(pdftex.def)             Requested size: 360.34537pt x 192.97046pt.
-<images/results/steps_klt.png, id=162, 1377.145pt x 744.7825pt>
-File: images/results/steps_klt.png Graphic file (type png)
-<use images/results/steps_klt.png>
-Package pdftex.def Info: images/results/steps_klt.png  used on input line 84.
-(pdftex.def)             Requested size: 344.2854pt x 186.19516pt.
-<images/results/pose_error_klt.png, id=163, 1478.52374pt x 803.0pt>
-File: images/results/pose_error_klt.png Graphic file (type png)
-<use images/results/pose_error_klt.png>
-Package pdftex.def Info: images/results/pose_error_klt.png  used on input line 91.
-(pdftex.def)             Requested size: 369.63004pt x 200.74951pt.
-
-Overfull \hbox (8.28004pt too wide) in paragraph at lines 91--92
- [][] 
- []
-
-<images/results/step_error_klt.png, id=164, 1497.595pt x 796.9775pt>
-File: images/results/step_error_klt.png Graphic file (type png)
-<use images/results/step_error_klt.png>
-Package pdftex.def Info: images/results/step_error_klt.png  used on input line 98.
-(pdftex.def)             Requested size: 374.39784pt x 199.24388pt.
-
-Overfull \hbox (13.04785pt too wide) in paragraph at lines 98--99
- [][] 
- []
-
-[7
-
- </Users/lfierz/studium/master/SP/Report/images/results/pose_klt.png> </Users/lfierz/studium/master/SP/Report/images/results/steps_klt.png>] [8 </Users/lfierz/studium/master/SP/Report/images/results/pose_error_klt.png> </Users/lfierz/studium/master/SP/Report/images/results/step_error_klt.png>]
-<images/comparison_appendix/pose_ambient.png, id=183, 1592.95125pt x 871.255pt>
-File: images/comparison_appendix/pose_ambient.png Graphic file (type png)
-<use images/comparison_appendix/pose_ambient.png>
-Package pdftex.def Info: images/comparison_appendix/pose_ambient.png  used on input line 114.
-(pdftex.def)             Requested size: 398.23683pt x 217.81322pt.
-
-Overfull \hbox (36.88684pt too wide) in paragraph at lines 114--115
- [][] 
- []
-
-<images/comparison_appendix/steps_ambient.png, id=184, 1559.8275pt x 843.15pt>
-File: images/comparison_appendix/steps_ambient.png Graphic file (type png)
-<use images/comparison_appendix/steps_ambient.png>
-Package pdftex.def Info: images/comparison_appendix/steps_ambient.png  used on input line 121.
-(pdftex.def)             Requested size: 389.95592pt x 210.78697pt.
-
-Overfull \hbox (28.60593pt too wide) in paragraph at lines 121--122
- [][] 
- []
-
-<images/comparison_appendix/pose_error_ambient.png, id=185, 1634.105pt x 887.315pt>
-File: images/comparison_appendix/pose_error_ambient.png Graphic file (type png)
-<use images/comparison_appendix/pose_error_ambient.png>
-Package pdftex.def Info: images/comparison_appendix/pose_error_ambient.png  used on input line 128.
-(pdftex.def)             Requested size: 408.52525pt x 221.8282pt.
-
-Overfull \hbox (47.17526pt too wide) in paragraph at lines 128--129
- [][] 
- []
-
-<images/comparison_appendix/step_error_ambient.png, id=186, 1651.16875pt x 883.3pt>
-File: images/comparison_appendix/step_error_ambient.png Graphic file (type png)
-<use images/comparison_appendix/step_error_ambient.png>
-Package pdftex.def Info: images/comparison_appendix/step_error_ambient.png  used on input line 135.
-(pdftex.def)             Requested size: 412.79118pt x 220.82446pt.
-
-Overfull \hbox (51.4412pt too wide) in paragraph at lines 135--136
- [][] 
- []
-
-[9
-
- </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/pose_ambient.png> </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/steps_ambient.png>] [10 </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/pose_error_ambient.png> </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/step_error_ambient.png>]
-<images/comparison_appendix/pose_range.png, id=203, 1584.92125pt x 841.1425pt>
-File: images/comparison_appendix/pose_range.png Graphic file (type png)
-<use images/comparison_appendix/pose_range.png>
-Package pdftex.def Info: images/comparison_appendix/pose_range.png  used on input line 147.
-(pdftex.def)             Requested size: 396.22934pt x 210.28511pt.
-
-Overfull \hbox (34.87935pt too wide) in paragraph at lines 147--148
- [][] 
- []
-
-<images/comparison_appendix/steps_range.png, id=204, 1569.865pt x 826.08624pt>
-File: images/comparison_appendix/steps_range.png Graphic file (type png)
-<use images/comparison_appendix/steps_range.png>
-Package pdftex.def Info: images/comparison_appendix/steps_range.png  used on input line 154.
-(pdftex.def)             Requested size: 392.46529pt x 206.52104pt.
-
-Overfull \hbox (31.1153pt too wide) in paragraph at lines 154--155
- [][] 
- []
-
-<images/comparison_appendix/pose_error_range.png, id=205, 1653.17625pt x 875.27pt>
-File: images/comparison_appendix/pose_error_range.png Graphic file (type png)
-<use images/comparison_appendix/pose_error_range.png>
-Package pdftex.def Info: images/comparison_appendix/pose_error_range.png  used on input line 161.
-(pdftex.def)             Requested size: 413.29305pt x 218.81696pt.
-
-Overfull \hbox (51.94305pt too wide) in paragraph at lines 161--162
- [][] 
- []
-
-<images/comparison_appendix/step_error_range.png, id=206, 1687.30376pt x 879.285pt>
-File: images/comparison_appendix/step_error_range.png Graphic file (type png)
-<use images/comparison_appendix/step_error_range.png>
-Package pdftex.def Info: images/comparison_appendix/step_error_range.png  used on input line 168.
-(pdftex.def)             Requested size: 421.8249pt x 219.82071pt.
-
-Overfull \hbox (60.47491pt too wide) in paragraph at lines 168--169
- [][] 
- []
-
-[11
-
- </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/pose_range.png> </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/steps_range.png>] [12 </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/pose_error_range.png> </Users/lfierz/studium/master/SP/Report/images/comparison_appendix/step_error_range.png>])
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
  (/Users/lfierz/studium/master/SP/Report/report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 1BDF595F3347A379ACAED59732FBB08C;619.
+(rerunfilecheck)             Checksum: E8FE98BCBF4901072B379D34D9DED437;182.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
  ) 
 Here is how much of TeX's memory you used:
- 24571 strings out of 480608
- 476475 string characters out of 5903631
+ 24362 strings out of 480608
+ 469572 string characters out of 5903631
  743186 words of memory out of 5000000
- 39841 multiletter control sequences out of 15000+600000
+ 39690 multiletter control sequences out of 15000+600000
  567201 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,15n,71p,475b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr17.pfb>
-Output written on /Users/lfierz/studium/master/SP/Report/report.pdf (20 pages, 25437592 bytes).
+ 71i,15n,71p,726b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr17.pfb>
+Output written on /Users/lfierz/studium/master/SP/Report/report.pdf (10 pages, 3641090 bytes).
 PDF statistics:
- 254 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 51 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 

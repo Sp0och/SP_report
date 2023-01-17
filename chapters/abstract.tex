@@ -3,24 +3,8 @@
 %\chapter*{Zusammenfassung}
 %\addcontentsline{toc}{chapter}{Zusammenfassung}
 
-% LiDAR technology has been around in the robotics world for quite some time and has
-% presented convincing results on many occasions. However these LiDAR sensors were – 
-% although great for depth information – lacking point density when compared to 
-% traditional images. Now with the newest generation of LiDAR sensors we have a tool 
-% at our hands that provides us with scans of 128 pixels vertically distributed and 
-% perceives a wider field of view which enables much more detailed projections of 
-% the point cloud data. With either intensity data of the reflections or the ambient 
-% lighting of the surroundings these projections look like ordinary pictures. 
-% My endeavour in this thesis is to combine state-of-the-art computer vision methods 
-% with the new possibilities that the more detailed LiDAR sensors provide us with. 
-% I will put emphasis on researching different feature detection and descriptor 
-% extraction methods (ORB, BRISK, KLT..) and their performance on the projections of 
-% the different kinds of complementary data considered. Furthermore a central 
-% endeavor will be the implementation of motion estimation through a closed form solution
-% using 2D features on the projected images, the match correspondences of subsequent frames 
-% and the 3D data from the point cloud.
+% My endeavour in this thesis was to combine state-of-the-art computer vision methods 
+% with the new possibilities that the denser LiDAR sensors provide us with in order to achieve motion estimation. To do so I made use of detected 2D visual features on projected LiDAR data in order to establish point correspondences on subsequent frames. These matches could then be used for the closed form solution to solve the point cloud alignment problem.
+% I also put emphasis on researching different feature extraction and descriptor methods (ORB, BRISK, KLT..) and the comparison of their performance on the projections of the different kinds of complementary data considered.
 
-
-My endeavour in this thesis was to combine state-of-the-art computer vision methods 
-with the new possibilities that the denser LiDAR sensors provide us with in order to achieve motion estimation. To do so I made use of detected 2D visual features on projected LiDAR data in order to establish point correspondences on subsequent frames. These matches could then be used for the closed form solution to solve the point cloud alignment problem.
-I also put emphasis on researching different feature extraction and descriptor methods (ORB, BRISK, KLT..) and the comparison of their performance on the projections of the different kinds of complementary data considered.
+This project aimed at paving the way for the creation of a high level remote control for autonomous excavators using a handheld augmented reality device. The goal was to provide the necessary building blocks for a handheld remote control to fullfil the task of feeding an input to the excavator. The main requirements needed are a way of sharing information between the two devices and solving the colocalization problem between the reference frames. After failed previous attempts of establishing the data transfer using a ROS connection between the two devices the focus in this work lied on making use of the already implemented excavator setup.
