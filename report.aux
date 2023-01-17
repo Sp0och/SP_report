@@ -2,10 +2,13 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -13,18 +16,10 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\@writefile{toc}{\contentsline {chapter}{Preface}{vii}{chapter*.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{Abstract}{viii}{chapter*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Preface}{vi}{chapter*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Abstract}{vii}{chapter*.3}\protected@file@percent }
 \bibstyle{bibliography/IEEEtranN}
 \bibdata{bibliography/references}
-\bibcite{ORB}{{1}{2011}{{Rublee et~al.}}{{Rublee, Rabaud, Konolige, and Bradski}}}
-\bibcite{BRISK}{{2}{2011}{{Leutenegger et~al.}}{{Leutenegger, Chli, and Siegwart}}}
-\bibcite{KLT}{{3}{1981}{{Lucas and Kanade}}{{}}}
-\bibcite{ransac}{{4}{1981}{{Fischler and Bolles}}{{}}}
-\bibcite{Pomerleau}{{5}{2015}{{Pomerleau et~al.}}{{Pomerleau, Colas, and Siegwart}}}
-\bibcite{LOAM}{{6}{2014}{{Zhang and Singh}}{{}}}
-\bibcite{robust2021shan}{{7}{2021}{{Shan et~al.}}{{Shan, Englot, Duarte, Ratti, and Daniela}}}
-\bibcite{liosam2020shan}{{8}{2020}{{Shan et~al.}}{{Shan, Englot, Meyers, Wang, Ratti, and Daniela}}}
 \@writefile{toc}{\contentsline {chapter}{Bibliography}{1}{chapter*.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapter}{\numberline {A}Additional Plots}{2}{appendix.A}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
@@ -100,4 +95,3 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {A.20}{\ignorespaces Step error comparison range\relax }}{12}{figure.caption.24}\protected@file@percent }
 \newlabel{fig:step_error_comparison_range}{{A.20}{12}{Step error comparison range\relax }{figure.caption.24}{}}
 \newlabel{fig:step_error_comparison_range@cref}{{[figure][20][2147483647,1]A.20}{[1][11][]12}}
-\gdef \@abspage@last{21}
