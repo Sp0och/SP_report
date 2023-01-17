@@ -1,0 +1,36 @@
+\chapter{Motion Estimation}\label{ch:motion_estimation}
+
+Instead of applying a computationally expensive iterative procedure like ICP\footnote{Iterative Closest Point \citep{Pomerleau}} I could make use of my previously found correspondences and apply the closed form solution\citep{closed_form} to the alignment problem.
+
+So each iteration a rotation matrix \textbf{R} and a translation vector \textbf{t} are estimated.
+
+\section{Pose update}{
+    In order to track the estimated pose of the sensor a current pose is considered in homogeneous coordinates and is updated using each iterations respective rotational and translational change.
+
+    \begin{center}
+        $\text{New Pose} = 
+        \underbrace{\begin{bmatrix}
+            R_{11o} & R_{12o} & R_{13o} & t_1o\\
+            R_{21o} & R_{22o} & R_{23o} & t_2o\\
+            R_{31o} & R_{32o} & R_{33o} & t_3o\\
+            0&0&0&1
+        \end{bmatrix}}_{\text{Old Pose}} * 
+        \underbrace{\begin{bmatrix}
+            R_{11i} & R_{12i} & R_{13i} & t_1i\\
+            R_{21i} & R_{22i} & R_{23i} & t_2i\\
+            R_{31i} & R_{32i} & R_{33i} & t_3i\\
+            0&0&0&1
+        \end{bmatrix}}_{\text{Pose Update}}
+        $
+    \end{center}
+
+    This pose represents the transformation from the static world frame to the dynamic sensor frame and determines the quality of this methods motion estimation procedure.
+    
+    For the evaluation of my method and the comparison of the individual building blocks used in my method I considered the transformation as such, the path drawn when following the pose in the world frame as well as the mapping quality when considering multiple subsequent point clouds. 
+}
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+\BOOKMARK [0][-]{chapter*.2}{Preface}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
+\BOOKMARK [0][-]{chapter.2}{Related Work}{}% 4
+\BOOKMARK [0][-]{chapter.3}{Method}{}% 5
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 6
+\BOOKMARK [1][-]{section.4.1}{Ground Truth}{chapter.4}% 7
+\BOOKMARK [1][-]{section.4.2}{Stepwise Results}{chapter.4}% 8
+\BOOKMARK [2][-]{subsection.4.2.1}{Comparison of Separated Components}{section.4.2}% 9
+\BOOKMARK [2][-]{subsection.4.2.2}{Average Step Performance Comparison}{section.4.2}% 10
+\BOOKMARK [1][-]{section.4.3}{Global Results}{chapter.4}% 11
+\BOOKMARK [2][-]{subsection.4.3.1}{Comparison of Separated Components}{section.4.3}% 12
+\BOOKMARK [2][-]{subsection.4.3.2}{Comparison of Global Error}{section.4.3}% 13
+\BOOKMARK [2][-]{subsection.4.3.3}{Comparing Estimated Trajectories}{section.4.3}% 14
+\BOOKMARK [1][-]{section.4.4}{Final Comparison of Feature Methods}{chapter.4}% 15
+\BOOKMARK [2][-]{subsection.4.4.1}{Local Step Comparison \205 feature methods}{section.4.4}% 16
+\BOOKMARK [2][-]{subsection.4.4.2}{Trajectory Comparison \205 feature methods}{section.4.4}% 17
+\BOOKMARK [2][-]{subsection.4.4.3}{Drift Comparison \205 feature methods}{section.4.4}% 18
+\BOOKMARK [2][-]{subsection.4.4.4}{Verdict Feature Methods}{section.4.4}% 19
+\BOOKMARK [1][-]{section.4.5}{Final Comparison of Complementary Data}{chapter.4}% 20
+\BOOKMARK [2][-]{subsection.4.5.1}{Local Step Comparison \205 projection types}{section.4.5}% 21
+\BOOKMARK [2][-]{subsection.4.5.2}{Trajectory Comparison \205 projection types}{section.4.5}% 22
+\BOOKMARK [2][-]{subsection.4.5.3}{Drift Comparison \205 projection types}{section.4.5}% 23
+\BOOKMARK [2][-]{subsection.4.5.4}{Verdict Complementary Data}{section.4.5}% 24
+\BOOKMARK [1][-]{section.4.6}{Additional Performance Results}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.6.1}{Map Construction using found Transformation}{section.4.6}% 26
+\BOOKMARK [2][-]{subsection.4.6.2}{Alternative Dataset 1: Indoor}{section.4.6}% 27
+\BOOKMARK [2][-]{subsection.4.6.3}{Alternative Dataset 2: Excavator}{section.4.6}% 28
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 29
+\BOOKMARK [1][-]{section.5.1}{General Performance}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.2}{Evaluation of Feature Methods}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.3}{Complementary Data Comparison}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.4}{Main Limitations}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.5}{Future Work}{chapter.5}% 34
+\BOOKMARK [0][-]{chapter*.42}{Bibliography}{}% 35
+\BOOKMARK [0][-]{appendix.A}{Additional Plots}{}% 36
+\BOOKMARK [1][-]{section.A.1}{ORB Comparison Plots}{appendix.A}% 37
+\BOOKMARK [1][-]{section.A.2}{BRISK Comparison Plots}{appendix.A}% 38
+\BOOKMARK [1][-]{section.A.3}{KLT Comparison Plots}{appendix.A}% 39
+\BOOKMARK [1][-]{section.A.4}{Intensity Data Comparison Plots}{appendix.A}% 40
+\BOOKMARK [1][-]{section.A.5}{Ambient Data Comparison Plots}{appendix.A}% 41
+\BOOKMARK [1][-]{section.A.6}{Range Data Comparison Plots}{appendix.A}% 42

@@ -1,0 +1,46 @@
+\contentsline {chapter}{Preface}{vii}{chapter*.2}%
+\contentsline {chapter}{Abstract}{viii}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Related Work}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Method}{4}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Results}{5}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Ground Truth}{5}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Stepwise Results}{5}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Comparison of Separated Components}{5}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Average Step Performance Comparison}{6}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Global Results}{7}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Comparison of Separated Components}{7}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Comparison of Global Error}{8}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Comparing Estimated Trajectories}{10}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Final Comparison of Feature Methods}{12}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Local Step Comparison – feature methods}{12}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Trajectory Comparison – feature methods}{12}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Drift Comparison – feature methods}{14}{subsection.4.4.3}%
+\contentsline {subsubsection}{Translational Drift - feature methods}{14}{section*.21}%
+\contentsline {subsubsection}{Angular Drift - feature methods}{15}{section*.24}%
+\contentsline {subsection}{\numberline {4.4.4}Verdict Feature Methods}{16}{subsection.4.4.4}%
+\contentsline {section}{\numberline {4.5}Final Comparison of Complementary Data}{17}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Local Step Comparison – projection types}{17}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Trajectory Comparison – projection types}{17}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Drift Comparison – projection types}{19}{subsection.4.5.3}%
+\contentsline {subsubsection}{Translational Drift - projection types}{19}{section*.31}%
+\contentsline {subsubsection}{Angular Drift - projection types}{20}{section*.34}%
+\contentsline {subsection}{\numberline {4.5.4}Verdict Complementary Data}{21}{subsection.4.5.4}%
+\contentsline {section}{\numberline {4.6}Additional Performance Results}{22}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Map Construction using found Transformation}{22}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Alternative Dataset 1: Indoor}{23}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Alternative Dataset 2: Excavator}{24}{subsection.4.6.3}%
+\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}General Performance}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Evaluation of Feature Methods}{25}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Complementary Data Comparison}{25}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Main Limitations}{26}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Future Work}{26}{section.5.5}%
+\contentsline {chapter}{Bibliography}{27}{chapter*.42}%
+\contentsline {chapter}{\numberline {A}Additional Plots}{28}{appendix.A}%
+\contentsline {section}{\numberline {A.1}ORB Comparison Plots}{28}{section.A.1}%
+\contentsline {section}{\numberline {A.2}BRISK Comparison Plots}{31}{section.A.2}%
+\contentsline {section}{\numberline {A.3}KLT Comparison Plots}{33}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Intensity Data Comparison Plots}{35}{section.A.4}%
+\contentsline {section}{\numberline {A.5}Ambient Data Comparison Plots}{35}{section.A.5}%
+\contentsline {section}{\numberline {A.6}Range Data Comparison Plots}{37}{section.A.6}%

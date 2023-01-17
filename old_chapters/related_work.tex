@@ -1,0 +1,20 @@
+\chapter{Related Work}\label{ch:related_work}
+
+The work related to this thesis can be divided into two categories:
+
+First there is the traditional 2D computer vision aspect to it for which I can't reference a specific work as the field is just too broad. However some crucial mentions are the different feature methods that I considered in this work (ORB\footnote{Oriented FAST and Rotated BRIEF \citep{ORB}}, BRISK \footnote{BRISK: Binary Robust Invariant Scalable Keypoints \citep{BRISK}} and KLT\footnote{Lucas Kanade Tracking \citep{KLT}}) as well as the outlier rejection procedure RANSAC\footnote{RANdom SAmple Consensus\citep{ransac}}.
+
+The second part concerns the 3D side of the paper being state of the art LiDAR usage for motion estimation:
+
+LiDAR as a tool is of course no new idea and many ingenious people have already 
+ventured into this field and refined methods to work with the 3D data that LiDAR 
+provides us with. The traditional procedure for achieving motion estimation using LiDAR is point cloud registration and there have been a lot of papers published about this idea. One that I would like to point out is the paper of Pomerleau et al. \footnote{A Review of Point Cloud Registration Algorithms for Mobile Robotics \citep{Pomerleau}} which summarizes the ICP algorithm (Iterative Closest Point) as well as certain usage cases.
+
+An alternative procedure to estimate the motion and construct a map of the surroundings at run time is LOAM \footnote{LiDAR Odometry and Mapping \citep{LOAM}} which is built around the idea of splitting the two algorithms up into the odometry and the mapping part.
+For the odometry part the detected features are divided into planar patches and sharp edge lines which are then used to establish correspondences and thus achieve motion estimation. 
+The mapping process makes use of the iterative scans as well as the transformations each step in order to build the permanent map in the world frame. This map in turn can be consulted in order to achieve much more accurate motion estimation.\\
+
+This bachelor thesis however was built on the idea of projecting dense point clouds of newer LiDAR scans onto planes and performing state of the art 2D CV methods on the projections as opposed to applying computationally expensive alignment methods. I thus used the best of both worlds by achieving run time performance without neglecting a significant amount of information through downsampling the point clouds. 
+\clearpage
+With great probability the first paper published about this new way of working with LiDAR data is the paper of Shan et al. \footnote{Robust place recognition using an imaging lidar \citep{robust2021shan}} In their work they used this approach in order to extract ORB features each scan and to build up a BoW database which they queried in order to find matches with later extracted features to determine loop closures. In comparison to their work I used this underlying method in order to achieve motion estimation considering just two subsequent scans as well as different descriptors and complementary types of data.
+

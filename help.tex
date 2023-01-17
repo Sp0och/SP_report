@@ -1,0 +1,93 @@
+
+%Integral
+\int_{}^{}
+
+%picture import
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{PICTURE}
+    \caption{something}
+    %label always in the end
+    \label{fig:lablename}
+\end{figure}
+
+%Column break
+%hereitis
+\vfill\null \columnbreak
+
+\underbrace{normal} _{under}
+
+}
+%red horizontal line:
+\color{red}\par\noindent\rule{\textwidth}{0.6pt}\color{black}
+
+% referencing inside the report
+\label{sec:SECTIONNAME}
+\cref{sec:SECTIONNAME}
+%other types are: 
+% ch: chapter
+% sec: section
+% subsec: subsection
+% fig: figure
+% tab: table
+% eq: equation
+% lst: code listing
+% itm: enumerated list item
+% alg: algorithm
+% app: appendix subsection
+
+%multiple images
+
+\begin{figure}[htp]
+    \centering
+    \subfloat[Initial Image]{
+    \includegraphics[width=3cm]{images/Lecture/Filtering/initial_image.png}
+        \label{Initial Image HP}
+        }
+        \hfill
+    \subfloat[Greyscale Image]{
+    \includegraphics[width=3cm]{images/Lecture/Filtering/grey_scale_image.png}
+        \label{Greyscale Image HP}
+        }
+        \hfill
+    \subfloat[Edges Detected]{
+    \includegraphics[width=3cm]{images/Lecture/Filtering/edges_detected.png}
+        \label{Edges Detected HP}
+        }
+        \hfill
+        \\
+    \subfloat[Threshold Filtered]{
+    \includegraphics[width=3cm]{images/Lecture/Filtering/filtering.png}
+        \label{Threshold Filtered}
+        }
+        \hspace{1.3cm}
+    \subfloat[Maximums]{
+    \includegraphics[width=3cm]{images/Lecture/Filtering/maximum_detection.png}
+        \label{Maximums HP}
+        }
+    \caption{Canny Edge Detector \citep{DavideScaramuzza}}
+    \label{fig:canny_edge_dector}
+\end{figure}
+
+%tables
+
+\begin{table}[!ht]
+    \setlength{\extrarowheight}{20pt}
+    \centering
+    \large
+    \begin{tabular}{|c|c|}
+        \hline
+        Extractor Comparison & ORB & BRISK & KLT\\[12pt]
+        \hline
+        Direct Depth Information & (Limited point density and FoW)\\[12pt]
+        \hline
+        Lighting Independence & No color detection\\[12pt]
+        \hline
+        360° FoW (horizontally) & Pricier than cameras\\[12pt]
+        \hline
+         & Generally heavier than cameras\\[12pt]
+        \hline
+    \end{tabular}
+    \caption{LiDAR vs Cameras}
+    \label{tab:LvsC}
+\end{table}

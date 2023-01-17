@@ -1,0 +1,54 @@
+\chapter{Optimal Settings}\label{ch:optimal_settings}
+\begin{table}[!ht]
+    \setlength{\extrarowheight}{10pt}
+    \centering
+    \large
+    \begin{tabular}{p{6cm} p{9cm}}
+        \hline
+        \makecell{\textbf{Intensity} image source} & smoothing applied with a kernel size of 2 pixels \\[12pt]
+        \hline
+        \makecell{\textbf{KLT} Extractor \\ (opencvs \textit{goodFeaturesToTrack})} & \begin{itemize}
+            \item Min \# features before new extraction: 70
+            \item \textit{Quality Level}: 0.05
+            \item \textit{Block Size}: 3x3 pixels
+            \item \textit{Corner Detection}: Min Eigenvalue
+        \end{itemize}\\[12pt]
+        \hline
+        \makecell{\textbf{KLT} Tracker \\ (opencvs \textit{calcOpticalFlowPyrLK})} & \begin{itemize}
+            \item \textit{Search window size}: 17x17 Pixels
+            \item \textit{\# Pyramids}: 2
+            \item Criteria: \textit{maxCount}: 10
+            \item Criteria: \textit{epsilon}: 0.005
+        \end{itemize}\\[12pt]
+        \hline
+        \makecell{Duplicate Filtering} & Duplicate filtering radius: 3 Pixels\\[12pt]
+        \hline
+        \makecell{Ransac Filtering} & \begin{itemize}
+            \item \textit{Reprojection threshold}: 3.0
+            \item \textit{Max iterations}: 2000
+        \end{itemize}\\[12pt]
+        \hline
+        \makecell{Depth Filtering} & Max depth distance: 0.3m (at 10 Hz)
+    \end{tabular}
+    \caption{Optimal parameter settings}
+    \label{tab:optimal_settings}
+\end{table}
+
+\textbf{Remarks on the Parameters}:
+
+\begin{itemize}
+    \item The listed parameters in \cref{tab:optimal_settings} are merely a recommendation drawn from the performance of this method on the considered dataset. As always individual trial and error is encouraged to find the best implementation possible.
+    \item I chose KLT over ORB because it is generally more consistent. 
+    \item KLT was implemented using the opencv methods \textit{goodFeaturesToTrack} and \textit{calcOpticalFlowPyrLK}. All the italic parameters are opencv settings. 
+    \item RANSAC was implemented using opencvs \textit{findHomography} method. The parameters shown are the default values.
+    \item Lastly the depth filtering is tailored to the movement in this dataset. If the sensor wasn't carried by a walking human but by a driving car all matches would be filtered out. So this is specific to datasets considered at walking speed at 10 Hz.
+    
+\end{itemize}
+
+
+
+
+
+
+
+

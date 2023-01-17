@@ -1,0 +1,18 @@
+\chapter{Introduction}
+\label{sec:introduction}
+%\chapter{Einleitung}
+%\label{sec:einleitung}
+
+Motion estimation is a well known problem in the robotics world and has been worked on by many brilliant people over a lot of time. Traditionally cameras were used to estimate the robots position however also LiDAR sensors are an option. Now with the newest generation of LiDAR sensors we have a tool 
+at our hands that provides us with scans of 128 pixels vertically distributed and 
+perceives a wider field of view which enables much more dense projections of 
+the point cloud data. 
+
+A challenge when using LiDAR data at real-time has always been the vast amount of information that the processor has to deal with leading to a necessity of downsampling. This problem is even enhanced for these denser scans which would have to be downsampled even more in order to achieve real-time performance and thus lose a lot of valuable data. 
+
+An idea to counteract this problem while preserving the advantages of the newer generation LiDAR scans is using 2D methods. It is fair to say that 2D computer vision methods are better researched and are faster than iterative 3D point handling methods. So an approach could be to consider the scanned dense 3D data as 2D data through projections in order to then apply fast and refined 2D methods to establish point correspondences and thus be able to apply the closed form solution to the motion estimation problem.
+
+
+
+
+ 
