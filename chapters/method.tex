@@ -1,23 +1,21 @@
-\chapter{Method}\label{sec:method}
+\chapter{Method}\label{ch:method}
 
-My approach consists of the following stages:
+As mentioned above the approach in this project can be divided into two stages:
 
 \begin{itemize}
-    \item LiDAR Dataset\\
-    Throughout this project I worked with an Ouster OS1-128 scan courtesy of the paper of Shan et al. \footnote{\citep*{robust2021shan}}
-    More specifically it is a handheld outside dataset characterized by urban structures like houses, vegetation and cars. As the sensor is carried throughout the whole scan duration it undergoes significant altitude change.
-    \item Image Projection\\
-    Different types of complementary point data from the input scan were used to perform projections onto an image plane.
-    \item Feature Extraction\\
-    The projections were treated like ordinary images on which features were extracted. 
-    \item Feature Matching\\
-    The extracted features went on to be matched on subsequent frames for point correspondences.
-    \item Outlier Rejection\\
-    Bad matches were neglected to improve the performance.
-    \item Motion Estimation\\
-    This was the final pursuit of the pipeline. Through the correspondences acquired through 2D CV techniques a closed form solution could be applied for the alignment of two subsequent point clouds in order to estimate the motion in between.
-    \item Comparison of Feature Methods and Complementary Data\\
-    Throughout the whole project I considered different feature methods to work with as well as the different complementary data types on which to apply the designed pipeline. The comparison of the possible combinations succeeded along the indiviudal steps of the implementation.
+    \item Data transfer between the excavator and the handheld device
+    \begin{itemize}
+        \item Making use of the already existing UE interface on the excavator to store system information in game components
+        \item Creating an Augmented Reality Unreal Engine (UE) game on the handheld device
+        \item Using an Unreal Engine local multiplayer connection in order to transfer data between the two UE instances
+    \end{itemize}
+    \item Colocalization between the two frames of reference 
+    \begin{itemize}
+        \item Extracting a spatial anchor from the excavator's camera view using a ROS wrapper 
+        \item Uploading this visual anchor in the form of an Azure Spatial Anchor to the Azure cloud
+        \item Retrieving the stored spatial anchor in the handheld UE instance 
+        \item Using the spatial anchor to relocate the UE world origin
+    \end{itemize}
 \end{itemize}
 
 

@@ -1,34 +1,34 @@
-\chapter{Conclusion}\label{sec:conclusion}
+% \chapter{Conclusion}\label{sec:conclusion}
 
-Before concluding this work I would like to mention \cref{ch:optimal_settings} where I stated my recommendation of an optimal parameter settings used for this pipeline.
+% Before concluding this work I would like to mention \cref{ch:optimal_settings} where I stated my recommendation of an optimal parameter settings used for this pipeline.
 
-\section{General Performance}{
+% \section{General Performance}{
 
-    In this work I presented a method to achieve run-time motion estimation using modern LiDARs in combination with state of the art 2D CV methods without the need to downsample the scans and thus losing valuable information.
+%     In this work I presented a method to achieve run-time motion estimation using modern LiDARs in combination with state of the art 2D CV methods without the need to downsample the scans and thus losing valuable information.
 
-    The method presented achieves substantially better results when compared to scan based LOAM. In general very little local drift can be seen whereas globally drift does accumulate.\footnote{Can be seen clearly in \cref{fig:local_mapping}}
+%     The method presented achieves substantially better results when compared to scan based LOAM. In general very little local drift can be seen whereas globally drift does accumulate.\footnote{Can be seen clearly in \cref{fig:local_mapping}}
 
-}
+% }
 
-\section{Evaluation of Feature Methods}{
-    BRISK does detect more points and thus constructs significantly more matches than the other two methods. This is cause for a higher computational cost. However it loses quite a lot of these matches in the outlier rejection process effectively leading to fever filtered matches than the other two methods had and thus a worse TP rate. 
+% \section{Evaluation of Feature Methods}{
+%     BRISK does detect more points and thus constructs significantly more matches than the other two methods. This is cause for a higher computational cost. However it loses quite a lot of these matches in the outlier rejection process effectively leading to fever filtered matches than the other two methods had and thus a worse TP rate. 
 
-    The motion estimation performance shows similar insight as the mean error is in the same range as the other methods but BRISKs error deviates stronger from the mean than KLT or ORB.
+%     The motion estimation performance shows similar insight as the mean error is in the same range as the other methods but BRISKs error deviates stronger from the mean than KLT or ORB.
 
-    Finally for the comparison of ORB and KLT it can be said that these methods perform similarly well. ORB has better numbers on feature rich environments while KLT has the advantage of consistency in feature scarce surroundings. (\cref{fig:indoor_klt})
-}
+%     Finally for the comparison of ORB and KLT it can be said that these methods perform similarly well. ORB has better numbers on feature rich environments while KLT has the advantage of consistency in feature scarce surroundings. (\cref{fig:indoor_klt})
+% }
 
-\section{Complementary Data Comparison}{
-    Intensity proved to be a consistent and good performing data source to consider. Ambient data yields similar performance however as it is dependent on the lighting of the surrounding intensity proves to be the best individual choice. 
+% \section{Complementary Data Comparison}{
+%     Intensity proved to be a consistent and good performing data source to consider. Ambient data yields similar performance however as it is dependent on the lighting of the surrounding intensity proves to be the best individual choice. 
 
-    Range falls off quite heavily regarding all phases. Fewer points are extracted, fewer inliers are considered in these correspondences and a high iterative error can be seen compared to the other two data types. 
-}
+%     Range falls off quite heavily regarding all phases. Fewer points are extracted, fewer inliers are considered in these correspondences and a high iterative error can be seen compared to the other two data types. 
+% }
 
-\section{Main Limitations}{
-    As I considered a dataset of urban structures like houses at a close distance there were most often substantially many features close by. When considering different datasets however with scarce amounts of features which are further away the performance suffered. This is shown in \cref{fig:excavator_map}.
-}
+% \section{Main Limitations}{
+%     As I considered a dataset of urban structures like houses at a close distance there were most often substantially many features close by. When considering different datasets however with scarce amounts of features which are further away the performance suffered. This is shown in \cref{fig:excavator_map}.
+% }
 
-\section{Future Work}{
-    The method presented shows promising results for the implemented scan based pipeline. The results could however be improved using a combination of the feature methods as well as a combination of the complementary data types. Furthermore considering multiple subsequent frames instead of just two would of course refine the performance significantly.
-}
+% \section{Future Work}{
+%     The method presented shows promising results for the implemented scan based pipeline. The results could however be improved using a combination of the feature methods as well as a combination of the complementary data types. Furthermore considering multiple subsequent frames instead of just two would of course refine the performance significantly.
+% }
 
