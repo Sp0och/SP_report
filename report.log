@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.6)  19 JAN 2023 14:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.6)  20 JAN 2023 14:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -925,7 +925,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 50
  (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<images/eth_logo.pdf, id=31, 8857.09pt x 2400.97pt>
+<images/eth_logo.pdf, id=51, 8857.09pt x 2400.97pt>
 File: images/eth_logo.pdf Graphic file (type pdf)
 <use images/eth_logo.pdf>
 Package pdftex.def Info: images/eth_logo.pdf  used on input line 50.
@@ -934,7 +934,7 @@ Package pdftex.def Info: images/eth_logo.pdf  used on input line 50.
 Overfull \vbox (10.27916pt too high) detected at line 50
  []
 
-<images/rsl_logo.pdf, id=32, 544.43402pt x 213.19649pt>
+<images/rsl_logo.pdf, id=52, 544.43402pt x 213.19649pt>
 File: images/rsl_logo.pdf Graphic file (type pdf)
 <use images/rsl_logo.pdf>
 Package pdftex.def Info: images/rsl_logo.pdf  used on input line 50.
@@ -993,87 +993,252 @@ l.94 \clearpage
 
 ] (/Users/lfierz/studium/master/SP/Report/chapters/related_work.tex
 Chapter 2.
+) [2
 
-Package natbib Warning: Citation `ORB' on page 2 undefined on input line 5.
-
-
-Package natbib Warning: Citation `BRISK' on page 2 undefined on input line 5.
-
-
-Package natbib Warning: Citation `KLT' on page 2 undefined on input line 5.
-
-
-Package natbib Warning: Citation `ransac' on page 2 undefined on input line 5.
-
-
-Package natbib Warning: Citation `Pomerleau' on page 2 undefined on input line 11.
-
-
-Package natbib Warning: Citation `LOAM' on page 2 undefined on input line 13.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--16
-
- []
-
-[2
-
-
-]
-
-Package natbib Warning: Citation `robust2021shan' on page 3 undefined on input line 19.
-
-) [3
 
 ] (/Users/lfierz/studium/master/SP/Report/chapters/method.tex
 Chapter 3.
-) [4
+) [3
 
 
 ] (/Users/lfierz/studium/master/SP/Report/chapters/excavator_setup.tex
-<images/excavator/excavator_setup.png, id=110, 1198.4775pt x 824.07875pt>
+<images/excavator/excavator_setup.png, id=117, 1198.4775pt x 824.07875pt>
 File: images/excavator/excavator_setup.png Graphic file (type png)
 <use images/excavator/excavator_setup.png>
 Package pdftex.def Info: images/excavator/excavator_setup.png  used on input line 5.
 (pdftex.def)             Requested size: 359.54602pt x 247.22552pt.
-) [5
+) [4
 
 
- </Users/lfierz/studium/master/SP/Report/images/excavator/excavator_setup.png>] (/Users/lfierz/studium/master/SP/Report/chapters/data_transfer.tex [6
+ </Users/lfierz/studium/master/SP/Report/images/excavator/excavator_setup.png>] (/Users/lfierz/studium/master/SP/Report/chapters/data_transfer.tex [5
 
 
-]) [7] (/Users/lfierz/studium/master/SP/Report/chapters/colocalization.tex) [8
+]) [6] (/Users/lfierz/studium/master/SP/Report/chapters/colocalization.tex
+<images/colocalization/meadow.jpg, id=139, 4015.0pt x 2258.4375pt>
+File: images/colocalization/meadow.jpg Graphic file (type jpg)
+<use images/colocalization/meadow.jpg>
+Package pdftex.def Info: images/colocalization/meadow.jpg  used on input line 30.
+(pdftex.def)             Requested size: 361.33441pt x 203.2506pt.
+<images/colocalization/parking_lot.jpg, id=140, 4015.0pt x 2258.4375pt>
+File: images/colocalization/parking_lot.jpg Graphic file (type jpg)
+<use images/colocalization/parking_lot.jpg>
+Package pdftex.def Info: images/colocalization/parking_lot.jpg  used on input line 35.
+(pdftex.def)             Requested size: 361.33441pt x 203.2506pt.
+
+Overfull \hbox (9.9844pt too wide) in paragraph at lines 30--37
+ [][] 
+ []
 
 
-] (/Users/lfierz/studium/master/SP/Report/report.bbl) [9
+Overfull \hbox (9.9844pt too wide) in paragraph at lines 30--37
+ [][] 
+ []
 
+[7
+
+
+] [8 </Users/lfierz/studium/master/SP/Report/images/colocalization/meadow.jpg> </Users/lfierz/studium/master/SP/Report/images/colocalization/parking_lot.jpg>]
+<images/colocalization/meadow_start.jpg, id=157, 3035.34pt x 4047.12pt>
+File: images/colocalization/meadow_start.jpg Graphic file (type jpg)
+<use images/colocalization/meadow_start.jpg>
+Package pdftex.def Info: images/colocalization/meadow_start.jpg  used on input line 48.
+(pdftex.def)             Requested size: 303.55179pt x 404.73572pt.
+ [9
+
+ </Users/lfierz/studium/master/SP/Report/images/colocalization/meadow_start.jpg>]
+<images/colocalization/meadow_before.png, id=166, 2348.775pt x 1084.05pt>
+File: images/colocalization/meadow_before.png Graphic file (type png)
+<use images/colocalization/meadow_before.png>
+Package pdftex.def Info: images/colocalization/meadow_before.png  used on input line 59.
+(pdftex.def)             Requested size: 354.66965pt x 178.86053pt.
+<images/colocalization/meadow_after.png, id=168, 2348.775pt x 1084.05pt>
+File: images/colocalization/meadow_after.png Graphic file (type png)
+<use images/colocalization/meadow_after.png>
+Package pdftex.def Info: images/colocalization/meadow_after.png  used on input line 64.
+(pdftex.def)             Requested size: 354.66965pt x 178.86053pt.
+
+Overfull \hbox (3.31964pt too wide) in paragraph at lines 59--66
+ [][] 
+ []
+
+
+Overfull \hbox (3.31964pt too wide) in paragraph at lines 59--66
+ [][] 
+ []
+
+[10
+
+ </Users/lfierz/studium/master/SP/Report/images/colocalization/meadow_before.png> </Users/lfierz/studium/master/SP/Report/images/colocalization/meadow_after.png>]
+<images/colocalization/parking_lot_start.jpg, id=182, 1204.5pt x 1606.0pt>
+File: images/colocalization/parking_lot_start.jpg Graphic file (type jpg)
+<use images/colocalization/parking_lot_start.jpg>
+Package pdftex.def Info: images/colocalization/parking_lot_start.jpg  used on input line 78.
+(pdftex.def)             Requested size: 337.2577pt x 449.67694pt.
+ [11
+
+ </Users/lfierz/studium/master/SP/Report/images/colocalization/parking_lot_start.jpg>]
+<images/colocalization/parking_lot_before.png, id=189, 2348.775pt x 1084.05pt>
+File: images/colocalization/parking_lot_before.png Graphic file (type png)
+<use images/colocalization/parking_lot_before.png>
+Package pdftex.def Info: images/colocalization/parking_lot_before.png  used on input line 89.
+(pdftex.def)             Requested size: 354.66965pt x 178.86053pt.
+<images/colocalization/parking_lot_after.png, id=191, 2348.775pt x 1084.05pt>
+File: images/colocalization/parking_lot_after.png Graphic file (type png)
+<use images/colocalization/parking_lot_after.png>
+Package pdftex.def Info: images/colocalization/parking_lot_after.png  used on input line 94.
+(pdftex.def)             Requested size: 354.66965pt x 178.86053pt.
+
+Overfull \hbox (3.31964pt too wide) in paragraph at lines 89--96
+ [][] 
+ []
+
+
+Overfull \hbox (3.31964pt too wide) in paragraph at lines 89--96
+ [][] 
+ []
+
+
+Underfull \vbox (badness 5147) has occurred while \output is active []
+
+ [12
+
+ </Users/lfierz/studium/master/SP/Report/images/colocalization/parking_lot_before.png> </Users/lfierz/studium/master/SP/Report/images/colocalization/parking_lot_after.png>]) [13] (/Users/lfierz/studium/master/SP/Report/report.bbl) [14
+
+
+] (/Users/lfierz/studium/master/SP/Report/chapters/appendix_images.tex
+Appendix A.
+<images/appendix/ambient/ambient_parking_lot_before.png, id=219, 2348.775pt x 1084.05pt>
+File: images/appendix/ambient/ambient_parking_lot_before.png Graphic file (type png)
+<use images/appendix/ambient/ambient_parking_lot_before.png>
+Package pdftex.def Info: images/appendix/ambient/ambient_parking_lot_before.png  used on input line 12.
+(pdftex.def)             Requested size: 343.94395pt x 173.45154pt.
+<images/appendix/ambient/ambient_parking_lot_after.png, id=221, 2348.775pt x 1084.05pt>
+File: images/appendix/ambient/ambient_parking_lot_after.png Graphic file (type png)
+<use images/appendix/ambient/ambient_parking_lot_after.png>
+Package pdftex.def Info: images/appendix/ambient/ambient_parking_lot_after.png  used on input line 17.
+(pdftex.def)             Requested size: 343.94395pt x 173.45154pt.
+[15
+
+
+
+ </Users/lfierz/studium/master/SP/Report/images/appendix/ambient/ambient_parking_lot_before.png> </Users/lfierz/studium/master/SP/Report/images/appendix/ambient/ambient_parking_lot_after.png>]
+<images/appendix/ambient/ambient_meadow_before.png, id=235, 2348.775pt x 1084.05pt>
+File: images/appendix/ambient/ambient_meadow_before.png Graphic file (type png)
+<use images/appendix/ambient/ambient_meadow_before.png>
+Package pdftex.def Info: images/appendix/ambient/ambient_meadow_before.png  used on input line 29.
+(pdftex.def)             Requested size: 343.94395pt x 173.45154pt.
+<images/appendix/ambient/ambient_meadow_after.png, id=237, 2348.775pt x 1084.05pt>
+File: images/appendix/ambient/ambient_meadow_after.png Graphic file (type png)
+<use images/appendix/ambient/ambient_meadow_after.png>
+Package pdftex.def Info: images/appendix/ambient/ambient_meadow_after.png  used on input line 34.
+(pdftex.def)             Requested size: 343.94395pt x 173.45154pt.
+<images/appendix/repeatability/repeat_1.1.png, id=239, 1606.0pt x 740.7675pt>
+File: images/appendix/repeatability/repeat_1.1.png Graphic file (type png)
+<use images/appendix/repeatability/repeat_1.1.png>
+Package pdftex.def Info: images/appendix/repeatability/repeat_1.1.png  used on input line 47.
+(pdftex.def)             Requested size: 368.06714pt x 185.19142pt.
+<images/appendix/repeatability/repeat_1.2.png, id=241, 1606.0pt x 740.7675pt>
+File: images/appendix/repeatability/repeat_1.2.png Graphic file (type png)
+<use images/appendix/repeatability/repeat_1.2.png>
+Package pdftex.def Info: images/appendix/repeatability/repeat_1.2.png  used on input line 52.
+(pdftex.def)             Requested size: 368.06714pt x 185.19142pt.
+
+Overfull \hbox (16.71713pt too wide) in paragraph at lines 47--54
+ [][] 
+ []
+
+
+Overfull \hbox (16.71713pt too wide) in paragraph at lines 47--54
+ [][] 
+ []
+
+<images/appendix/repeatability/repeat_2.1.png, id=243, 1606.0pt x 740.7675pt>
+File: images/appendix/repeatability/repeat_2.1.png Graphic file (type png)
+<use images/appendix/repeatability/repeat_2.1.png>
+Package pdftex.def Info: images/appendix/repeatability/repeat_2.1.png  used on input line 63.
+(pdftex.def)             Requested size: 368.06714pt x 185.19142pt.
+<images/appendix/repeatability/repeat_2.2.png, id=245, 1606.0pt x 740.7675pt>
+File: images/appendix/repeatability/repeat_2.2.png Graphic file (type png)
+<use images/appendix/repeatability/repeat_2.2.png>
+Package pdftex.def Info: images/appendix/repeatability/repeat_2.2.png  used on input line 68.
+(pdftex.def)             Requested size: 368.06714pt x 185.19142pt.
+
+Overfull \hbox (16.71713pt too wide) in paragraph at lines 63--70
+ [][] 
+ []
+
+
+Overfull \hbox (16.71713pt too wide) in paragraph at lines 63--70
+ [][] 
+ []
+
+<images/appendix/repeatability/repeat_3.1.png, id=247, 1606.0pt x 740.7675pt>
+File: images/appendix/repeatability/repeat_3.1.png Graphic file (type png)
+<use images/appendix/repeatability/repeat_3.1.png>
+Package pdftex.def Info: images/appendix/repeatability/repeat_3.1.png  used on input line 79.
+(pdftex.def)             Requested size: 368.06714pt x 185.19142pt.
+<images/appendix/repeatability/repeat_3.2.png, id=249, 1606.0pt x 740.7675pt>
+File: images/appendix/repeatability/repeat_3.2.png Graphic file (type png)
+<use images/appendix/repeatability/repeat_3.2.png>
+Package pdftex.def Info: images/appendix/repeatability/repeat_3.2.png  used on input line 84.
+(pdftex.def)             Requested size: 368.06714pt x 185.19142pt.
+
+Overfull \hbox (16.71713pt too wide) in paragraph at lines 79--86
+ [][] 
+ []
+
+
+Overfull \hbox (16.71713pt too wide) in paragraph at lines 79--86
+ [][] 
+ []
+
+<images/appendix/repeatability/repeat_4.1.png, id=251, 1606.0pt x 740.7675pt>
+File: images/appendix/repeatability/repeat_4.1.png Graphic file (type png)
+<use images/appendix/repeatability/repeat_4.1.png>
+Package pdftex.def Info: images/appendix/repeatability/repeat_4.1.png  used on input line 95.
+(pdftex.def)             Requested size: 368.06714pt x 185.19142pt.
+<images/appendix/repeatability/repeat_4.2.png, id=253, 1606.0pt x 740.7675pt>
+File: images/appendix/repeatability/repeat_4.2.png Graphic file (type png)
+<use images/appendix/repeatability/repeat_4.2.png>
+Package pdftex.def Info: images/appendix/repeatability/repeat_4.2.png  used on input line 100.
+(pdftex.def)             Requested size: 368.06714pt x 185.19142pt.
+
+Overfull \hbox (16.71713pt too wide) in paragraph at lines 95--102
+ [][] 
+ []
+
+
+Overfull \hbox (16.71713pt too wide) in paragraph at lines 95--102
+ [][] 
+ []
+
+[16
+
+ </Users/lfierz/studium/master/SP/Report/images/appendix/ambient/ambient_meadow_before.png> </Users/lfierz/studium/master/SP/Report/images/appendix/ambient/ambient_meadow_after.png>] [17 </Users/lfierz/studium/master/SP/Report/images/appendix/repeatability/repeat_1.1.png> </Users/lfierz/studium/master/SP/Report/images/appendix/repeatability/repeat_1.2.png>] [18 </Users/lfierz/studium/master/SP/Report/images/appendix/repeatability/repeat_2.1.png> </Users/lfierz/studium/master/SP/Report/images/appendix/repeatability/repeat_2.2.png>] [19 </Users/lfierz/studium/master/SP/Report/images/appendix/repeatability/repeat_3.1.png> </Users/lfierz/studium/master/SP/Report/images/appendix/repeatability/repeat_3.2.png>] [20 </Users/lfierz/studium/master/SP/Report/images/appendix/repeatability/repeat_4.1.png> </Users/lfierz/studium/master/SP/Report/images/appendix/repeatability/repeat_4.2.png>]) [21
 
 ]
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
-(/Users/lfierz/studium/master/SP/Report/report.aux)
+ (/Users/lfierz/studium/master/SP/Report/report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: F55E60879F7C75055AB72A01F71AE52F;271.
+(rerunfilecheck)             Checksum: EAC00D8B9900F922C2179CFDBEA88D3C;594.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  ) 
 Here is how much of TeX's memory you used:
- 24452 strings out of 480608
- 471257 string characters out of 5903631
- 744186 words of memory out of 5000000
- 39737 multiletter control sequences out of 15000+600000
- 585364 words of font info for 70 fonts, out of 8000000 for 9000
+ 24731 strings out of 480608
+ 479640 string characters out of 5903631
+ 746186 words of memory out of 5000000
+ 39944 multiletter control sequences out of 15000+600000
+ 582421 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,15n,71p,726b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr8.pfb>
-Output written on /Users/lfierz/studium/master/SP/Report/report.pdf (13 pages, 2204946 bytes).
+ 71i,15n,71p,864b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on /Users/lfierz/studium/master/SP/Report/report.pdf (25 pages, 66184526 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 374 PDF objects out of 1000 (max. 8388607)
+ 272 compressed objects within 3 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 312 words of extra memory for PDF output out of 10000 (max. 10000000)
 
