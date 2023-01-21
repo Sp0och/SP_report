@@ -1,10 +1,10 @@
-\chapter*{Data Transfer}\label{ch:data_transfer}
+\chapter{Data Transfer}\label{ch:data_transfer}
 
-\section*{Multiplayer Connection}\label{sec:multiplayer}
+\section{Multiplayer Connection}\label{sec:multiplayer}
 
 As mentioned above the approach to fullfil the data sharing requirement was to use an Unreal Engine multiplayer Connection.
 
-There are different possibilites of online subsystems to use. As the plan is to use the handheld device on the construction site a local network connection was the choice for this project. Unreal Engine offers different types of multiplayer connections. Mainly two options could be relevant:
+There are different possibilites of online subsystems to use. As the plan is to use the handheld device on the construction site, the local network connection provided by Unreal Engine was the method of choice. Unreal Engine offers different types of multiplayer connections. Mainly two options could be relevant:
 \begin{itemize}
     \item Client - Server model
     \item Dedicated Server model
@@ -16,19 +16,40 @@ The second option lets an Unreal Engine instance function as a real server witho
 
 In this project I used the Client - Server approach in case the necessity of input based interaction with the excavator UE instance arises in the future.
 
-\subsection*{Connection Challenge}\label{subsec:key}
+\subsection{Connection Challenge}\label{subsec:key}
 
-Normally when connecting two Unreal Engine games through a multiplayer connection it is the same game simply played from different devices. In this case however we have one UE instance running on the excavator using Linux both for development (ROS) and for the deployment (ROS Subscriber). The other game runs on Android and is an AR game. So in this setting we have a connection between two games which have fundamentally different components as well as different platforms that they run on. 
+Normally when connecting two Unreal Engine games through a multiplayer connection it is the same game simply played from different devices. In this case however we have one UE instance running on the excavator using Linux both for development (ROS) and for the platform it is played on (ROS Subscriber). The other game runs on Android and is an AR game. So in this setting we have a connection between two games which have fundamentally different components as well as different platforms that they run on. 
 
 It turns out that on a low level a successfull UE multiplayer connection requires identical checksums in the two systems. The checksum is a number generated from Unreal Engine which depends on the project name and certain components in the game level amongst other factors.
 
-It turns out that neither the platform the game runs on nor special components like the AR implementation interfere with this checksum as long as the necessary components from the server (excavator) are also existing in the client (handheld) instance. Thus establishing a local connection between the two instances was possible. At a later point when working on the colocalization part with Azure Spatial Anchors it was necessary to switch to the handheld app development on Windows. This is due to the fact that the Azure Spatial Anchor Unreal Engine plugin is only available on windows. 
+It turns out that neither the platform the game runs on nor special components like the AR implementation interfere with this checksum as long as the necessary components from the server (excavator) are also existing in the client (handheld) instance. Thus establishing a local connection between the two instances was possible. After successfully creating a local section on one instance, connecting to it with the other a game component could be successfully replicated to the second instance. 
+
+At a later point in this project when working on the colocalization part with Azure Spatial Anchors it was necessary to switch to the handheld android app development on Windows. This is due to the fact that the Azure Spatial Anchor Unreal Engine plugin is only available on windows. 
 
 When developing on Windows the checksum of the project changed however. So in order to use the Azure Spatial Anchor colocalization approach from this project the checksum has to be manually overwritten if possible or otherwise another Online Subsystem than the UE default one has to be used. 
 
-\section*{State Sharing}\label[type]{sec:state_sharing}
+\begin{table}[!ht]
+    \setlength{\extrarowheight}{20pt}
+    \centering
+    \large
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Generated Checksum & Ubuntu Game & Android Game\\[12pt]
+        \hline
+        Linux Development & \color{green}96120701 & \color{green}96120701\\[12pt]
+        \hline
+        Windows Development & - & \color{red}2769037734\\[12pt]
+        \hline
+    \end{tabular}
+    \caption{Checksum Comparison}
+    \label{tab:checksum}
+\end{table}
+
+\section{State Sharing}\label[type]{sec:state_sharing}
 To establish all data transfer connections between the two devices would have been too wide of a scope for this project which is why I focused on the transmission of the excavator's current state. In general if the transmission of any information succeeds using this setup then all further information can be packaged into game components accordingly and shared in the same fashion.
 
 As seen in \cref{fig:ex_setup} the excavator's state is fed to the Unreal Engine model directly through a ROS state subscriber node which is embedded in the game.
 
 To solve the data transmission problem for the handheld device the idea was to intercept this connection. The state input is thus not only sent to the excavator model but also into a state storage game component. This game component would then be updated continuously and replicated in the handheld UE instance with the new values. Simultaneously if an excavator model is referenced by this state storage actor the state is fed into the model at each game tick to also update the handheld excavator model's state.
+
+This state sharing pipeline worked really robustly and without added delay when testing on one Unreal Engine instance with a rosbag file representing the excavator movement.

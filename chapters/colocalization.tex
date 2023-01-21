@@ -1,16 +1,16 @@
-\chapter*{Colocalization}\label{ch:colocalization}
+\chapter{Colocalization}\label{ch:colocalization}
 
 When creating a point in the Unreal Engine instance on the handheld device then it's coordinates are considered in reference to the world coordinate system of the Unreal Engine game. In order for the excavator to be able to use the set geometric location it has to be converted into a representation with respect to the excavator's coordinate system.
 
 As previously mentioned the approach used in this work was to extract Azure Spatial Anchors from the excavator's camera view using a ROS wrapper and after uploading them to Azure Cloud retrieve them using an Unreal Engine plugin on the mobile device. In the end this allows us to find the relative transformation from the UE world coordinate origin to the excavator's coordinate origin which is the pose of the detected anchor.
 
-\section*{Azure Spatial Anchors}\label{sec:azure_spatial_anchors}
+\section{Azure Spatial Anchors}\label{sec:azure_spatial_anchors}
 
 The advantage of using Azure Spatial Anchors is that the colocalization is completely taken care of by creating and detecting an anchor due to the visual information of the environment that is encoded within it.
 
 In practice a mapping of the environment is created with the camera's starting position being the coordinate origin. As soon as enough visual inputs from the environment are gathered a location can be sent. In this project the location to track and to store in the Azure Cloud was the origin of the camera device itself. This made it possible to find the relative transformation between the coordinate systems.
 
-\section*{Colocalization Testing}\label{sec:colocalization_testing}
+\section{Colocalization Testing}\label{sec:colocalization_testing}
 
 For the testing of the proposed pipeline without the need of using the actual excavator a Realsense t-265 tracking camera was used which represented the camera view from the excavator. The procedure consisted of the steps described above:
 \begin{itemize}
@@ -40,7 +40,7 @@ To test for robustness regarding the construction environment two area types wer
 \clearpage
 
 
-\subsection*{Testing: Meadow Environment}\label{subsec:meadow}
+\subsection{Testing: Meadow Environment}\label{subsec:meadow}
 
 
 \begin{figure}[ht]
@@ -71,7 +71,7 @@ As can be seen in \cref{fig:meadow_basic} after the colocalization the excavator
 
 \clearpage
 
-\subsection*{Testing: Parking Lot Environment}\label{subsec:parking_lot}
+\subsection{Testing: Parking Lot Environment}\label{subsec:parking_lot}
 
 \begin{figure}[ht]
     \centering
@@ -99,19 +99,17 @@ As can be seen in \cref{fig:meadow_basic} after the colocalization the excavator
 
 Here we have a similar performance as with the meadow environment. "Correct" relocalization to a faulty initial anchor. 
 
-\subsection*{Robustness}\label{subsec:robustness}
+\subsection{Robustness}\label{subsec:robustness}
 
 When doing the same test with different ambient circumstances like variations in lighting or weather we can see quite robust results to the change in quality. For instance the anchor points for the parking lot environment were detected at a somewhat dry period of the day while the anchors were detected rather easily when the ground was really wet. Looking at \cref{subsec:ambient} we can also see robust results for worse lighting conditions in the evening.
 
 The second kind robustness that was tested in this setup was the repeatability of this process from different starting poses. The results thereof can be seen in \cref{subsec:repeatability}. The same conclusion can be drawn yet again: we have a very consistent behaviour (considering the fact that the anchor created is still off).
 
-\subsection*{Testing Conclusion}\label{subsec:testing_conclusion}
+\subsection{Testing Conclusion}\label{subsec:testing_conclusion}
 
 We find that we have a persisting error when creating the visual anchors with the t-265 Tracked Camera. Given these shifted anchors however the colocalization process is very accurate and robust regarding changes in illumination, weather and starting handheld position.
 
-Comparing the outdoor results to the indoor results in \cref{subsec:indoor_comparison} we see the anchor creation indoor performing much more accurately. This could be due to the more distinct environment or the smaller space to be considered. To draw a more thorough conclusion more tests would be necessary and also the extraction of the anchors from the actual excavator's camera view.
-
-\section*{Alternative Location Sharing Idea}\label{sec:alternative_location_transfer}
+\section{Alternative Location Sharing}\label{sec:alternative_location_transfer}
 
 Taking a step back $-$ the initial reason to establish colocalization was to send a high level spatial input from the handheld device to the excavator.
 

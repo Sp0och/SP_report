@@ -1,34 +1,34 @@
-% \chapter{Conclusion}\label{sec:conclusion}
+\chapter{Conclusion}\label{sec:conclusion}
 
-% Before concluding this work I would like to mention \cref{ch:optimal_settings} where I stated my recommendation of an optimal parameter settings used for this pipeline.
+To come back to the initial problem setting in this project it was attempted to pave the way for the creation of an AR handheld remote control for an autonomous excavator. The following two requirements were tackled:
 
-% \section{General Performance}{
+\section{Data Transfer}\label{sec:conc_data_transfer}
+The proposed method in this work was to use an Unreal Engine multiplayer connection for the information sharing process. This seems to be a working solution with a few persisting obstacles which have to be worked around before implementing it in the pipeline. 
 
-%     In this work I presented a method to achieve run-time motion estimation using modern LiDARs in combination with state of the art 2D CV methods without the need to downsample the scans and thus losing valuable information.
+\subsection{Checksum Inequality}\label{subsec:checksum_error}
 
-%     The method presented achieves substantially better results when compared to scan based LOAM. In general very little local drift can be seen whereas globally drift does accumulate.\footnote{Can be seen clearly in \cref{fig:local_mapping}}
+When the colocalization requirement is tackled using the Azure Spatial Anchor approach as described in \cref{ch:colocalization} then the problem of unequal checksums arises. This has to be worked around. Currently the two following options come to mind:
+\begin{itemize}
+    \item Reverse engineering the checksum in order to sequentally change update it and ideally reach the desired initial checksum again. (Due to limited documentation of the checksum generation this is mostly educated guesswork)
+    \item Finding a way of manually overriding the generated checksum in the handheld UE instance
+    \item Making use of a different subsystem as for instance Steam\footnote{Steam Online Subsystem\url{https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/Online/Steam/}} provides. This option provides a robust solution with the drawback that one more piece of software is necessary on the excavator which naturally is undesirable.
+\end{itemize}
 
-% }
+\subsection{Unreliable Local Connection}\label{subsec:unrealiable_connection}
 
-% \section{Evaluation of Feature Methods}{
-%     BRISK does detect more points and thus constructs significantly more matches than the other two methods. This is cause for a higher computational cost. However it loses quite a lot of these matches in the outlier rejection process effectively leading to fever filtered matches than the other two methods had and thus a worse TP rate. 
+Throughout this project many different network settings were tested and even with sufficient network speed the multiplayer connection between the UE instances was not reliable. To draw a definite conclusion here more tests would be necessary however a possibility might be to use a dedicated server\footnote{as described in \cref{sec:multiplayer}} on the excavator instead of the client - server model.
 
-%     The motion estimation performance shows similar insight as the mean error is in the same range as the other methods but BRISKs error deviates stronger from the mean than KLT or ORB.
+\section{Colocalization}\label{sec:conc_colocalization}
 
-%     Finally for the comparison of ORB and KLT it can be said that these methods perform similarly well. ORB has better numbers on feature rich environments while KLT has the advantage of consistency in feature scarce surroundings. (\cref{fig:indoor_klt})
-% }
+There is of course a multitude of possibilities to accomplish colocalization between two camera origins. The Azure Spatial Anchor set up allows for quite an easy implementation as the colocalization process is handled completely by this module given the successfull creation and detection of such a spatial anchor.
 
-% \section{Complementary Data Comparison}{
-%     Intensity proved to be a consistent and good performing data source to consider. Ambient data yields similar performance however as it is dependent on the lighting of the surrounding intensity proves to be the best individual choice. 
+As seen in \cref{sec:colocalization_testing} the anchor creation tends to have a shift in its location. Apart from this the colocalization pipeline seems very reliable with robustness regarding both ambient changes as well as repeatability.
 
-%     Range falls off quite heavily regarding all phases. Fewer points are extracted, fewer inliers are considered in these correspondences and a high iterative error can be seen compared to the other two data types. 
-% }
+\section{Outlook}\label{sec:outlook}
 
-% \section{Main Limitations}{
-%     As I considered a dataset of urban structures like houses at a close distance there were most often substantially many features close by. When considering different datasets however with scarce amounts of features which are further away the performance suffered. This is shown in \cref{fig:excavator_map}.
-% }
+With the proof of concept of the state transfer in this manner it was possible to share information between the two systems. With this connection working any other piece of data can be converted into an Unreal Engine game component and shared in the same way. This very same connection can be used to transfer inputs from the handheld device up to the excavator given that the UE connection stays on a client-server basis.
 
-% \section{Future Work}{
-%     The method presented shows promising results for the implemented scan based pipeline. The results could however be improved using a combination of the feature methods as well as a combination of the complementary data types. Furthermore considering multiple subsequent frames instead of just two would of course refine the performance significantly.
-% }
+As the inclusion of the Azure Spatial Anchor plugin renders the connection unviable for the time being this has to be looked into further as indicated in \cref{sec:conc_data_transfer}. Alternatively a different method for colocalization would be necessary. 
+
+So all in all this project provides two working modules for the key requirements handheld remote control of autonomous excavators.
 
