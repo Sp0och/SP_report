@@ -1,10 +1,8 @@
 \chapter{Abstract}
-\addcontentsline{toc}{chapter}{Abstract}
-%\chapter{Zusammenfassung}
-%\addcontentsline{toc}{chapter}{Zusammenfassung}
 
-% My endeavour in this thesis was to combine state-of-the-art computer vision methods 
-% with the new possibilities that the denser LiDAR sensors provide us with in order to achieve motion estimation. To do so I made use of detected 2D visual features on projected LiDAR data in order to establish point correspondences on subsequent frames. These matches could then be used for the closed form solution to solve the point cloud alignment problem.
-% I also put emphasis on researching different feature extraction and descriptor methods (ORB, BRISK, KLT..) and the comparison of their performance on the projections of the different kinds of complementary data considered.
 
-This project aimed at paving the way for the creation of a high level remote control for autonomous excavators using a handheld augmented reality device. A second aspiration was to explore the usage of less conventional technologies for robotics such as Unreal Engine and Azure Spatial Anchors. The main goal was to provide the necessary building blocks for a handheld remote control to fullfil the task of feeding an input to an excavator. The main requirements are a way of sharing information between the two devices and solving the colocalization problem between the reference frames. After failed previous attempts of establishing the data transfer using a ROS connection between the two devices the focus in this work lied on making use of the already implemented excavator setup.
+This project aimed at paving the way for the creation of a high level remote control for autonomous excavators using a handheld augmented reality device. 
+
+The two key requirements for such an endeavour are first of all to be able to send data as well as inputs back and forth between the two devices. Secondly there are two camera views in this setup the AR view of the handheld device and the image input that the excavator receives. In order to precisely send geometric inputs from one device to the other colocalization is required. 
+
+The idea was to connect the handheld device making use of Unreal Engine game instances. For the excavator's side this was already setup. For the colocalization requirement the approach was to use Microsoft's Azure Spatial Anchors for a frictionless implementation between the two camera origins. Thus an additional goal was to further understand the capabilities of these less conventional methods for robotic applications.

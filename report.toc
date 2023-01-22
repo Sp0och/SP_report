@@ -1,7 +1,5 @@
 \contentsline {chapter}{\numberline {1}Preface}{ii}{chapter.1}%
-\contentsline {chapter}{Preface}{ii}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Abstract}{iii}{chapter.2}%
-\contentsline {chapter}{Abstract}{iii}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Introduction}{1}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Related Work}{2}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Method}{3}{chapter.5}%
@@ -24,4 +22,8 @@
 \contentsline {subsection}{\numberline {9.1.2}Unreliable Local Connection}{14}{subsection.9.1.2}%
 \contentsline {section}{\numberline {9.2}Colocalization}{15}{section.9.2}%
 \contentsline {section}{\numberline {9.3}Outlook}{15}{section.9.3}%
-\contentsline {chapter}{Bibliography}{16}{chapter*.9}%
+\contentsline {chapter}{Bibliography}{16}{chapter*.10}%
+\contentsline {chapter}{\numberline {A}Additional Images}{17}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Colocalization Testing}{17}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Ambient Changes}{17}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Repeatability}{19}{subsection.A.1.2}%

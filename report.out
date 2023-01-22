@@ -1,27 +1,29 @@
 \BOOKMARK [0][-]{chapter.1}{Preface}{}% 1
-\BOOKMARK [0][-]{chapter.1}{Preface}{}% 2
-\BOOKMARK [0][-]{chapter.2}{Abstract}{}% 3
-\BOOKMARK [0][-]{chapter.2}{Abstract}{}% 4
-\BOOKMARK [0][-]{chapter.3}{Introduction}{}% 5
-\BOOKMARK [0][-]{chapter.4}{Related Work}{}% 6
-\BOOKMARK [0][-]{chapter.5}{Method}{}% 7
-\BOOKMARK [0][-]{chapter.6}{Excavator Setup}{}% 8
-\BOOKMARK [0][-]{chapter.7}{Data Transfer}{}% 9
-\BOOKMARK [1][-]{section.7.1}{Multiplayer Connection}{chapter.7}% 10
-\BOOKMARK [2][-]{subsection.7.1.1}{Connection Challenge}{section.7.1}% 11
-\BOOKMARK [1][-]{section.7.2}{State Sharing}{chapter.7}% 12
-\BOOKMARK [0][-]{chapter.8}{Colocalization}{}% 13
-\BOOKMARK [1][-]{section.8.1}{Azure Spatial Anchors}{chapter.8}% 14
-\BOOKMARK [1][-]{section.8.2}{Colocalization Testing}{chapter.8}% 15
-\BOOKMARK [2][-]{subsection.8.2.1}{Testing: Meadow Environment}{section.8.2}% 16
-\BOOKMARK [2][-]{subsection.8.2.2}{Testing: Parking Lot Environment}{section.8.2}% 17
-\BOOKMARK [2][-]{subsection.8.2.3}{Robustness}{section.8.2}% 18
-\BOOKMARK [2][-]{subsection.8.2.4}{Testing Conclusion}{section.8.2}% 19
-\BOOKMARK [1][-]{section.8.3}{Alternative Location Sharing}{chapter.8}% 20
-\BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 21
-\BOOKMARK [1][-]{section.9.1}{Data Transfer}{chapter.9}% 22
-\BOOKMARK [2][-]{subsection.9.1.1}{Checksum Inequality}{section.9.1}% 23
-\BOOKMARK [2][-]{subsection.9.1.2}{Unreliable Local Connection}{section.9.1}% 24
-\BOOKMARK [1][-]{section.9.2}{Colocalization}{chapter.9}% 25
-\BOOKMARK [1][-]{section.9.3}{Outlook}{chapter.9}% 26
-\BOOKMARK [0][-]{chapter*.9}{Bibliography}{}% 27
+\BOOKMARK [0][-]{chapter.2}{Abstract}{}% 2
+\BOOKMARK [0][-]{chapter.3}{Introduction}{}% 3
+\BOOKMARK [0][-]{chapter.4}{Related Work}{}% 4
+\BOOKMARK [0][-]{chapter.5}{Method}{}% 5
+\BOOKMARK [0][-]{chapter.6}{Excavator Setup}{}% 6
+\BOOKMARK [0][-]{chapter.7}{Data Transfer}{}% 7
+\BOOKMARK [1][-]{section.7.1}{Multiplayer Connection}{chapter.7}% 8
+\BOOKMARK [2][-]{subsection.7.1.1}{Connection Challenge}{section.7.1}% 9
+\BOOKMARK [1][-]{section.7.2}{State Sharing}{chapter.7}% 10
+\BOOKMARK [0][-]{chapter.8}{Colocalization}{}% 11
+\BOOKMARK [1][-]{section.8.1}{Azure Spatial Anchors}{chapter.8}% 12
+\BOOKMARK [1][-]{section.8.2}{Colocalization Testing}{chapter.8}% 13
+\BOOKMARK [2][-]{subsection.8.2.1}{Testing: Meadow Environment}{section.8.2}% 14
+\BOOKMARK [2][-]{subsection.8.2.2}{Testing: Parking Lot Environment}{section.8.2}% 15
+\BOOKMARK [2][-]{subsection.8.2.3}{Robustness}{section.8.2}% 16
+\BOOKMARK [2][-]{subsection.8.2.4}{Testing Conclusion}{section.8.2}% 17
+\BOOKMARK [1][-]{section.8.3}{Alternative Location Sharing}{chapter.8}% 18
+\BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 19
+\BOOKMARK [1][-]{section.9.1}{Data Transfer}{chapter.9}% 20
+\BOOKMARK [2][-]{subsection.9.1.1}{Checksum Inequality}{section.9.1}% 21
+\BOOKMARK [2][-]{subsection.9.1.2}{Unreliable Local Connection}{section.9.1}% 22
+\BOOKMARK [1][-]{section.9.2}{Colocalization}{chapter.9}% 23
+\BOOKMARK [1][-]{section.9.3}{Outlook}{chapter.9}% 24
+\BOOKMARK [0][-]{chapter*.10}{Bibliography}{}% 25
+\BOOKMARK [0][-]{appendix.A}{Additional Images}{}% 26
+\BOOKMARK [1][-]{section.A.1}{Colocalization Testing}{appendix.A}% 27
+\BOOKMARK [2][-]{subsection.A.1.1}{Ambient Changes}{section.A.1}% 28
+\BOOKMARK [2][-]{subsection.A.1.2}{Repeatability}{section.A.1}% 29

@@ -1,17 +1,17 @@
 \chapter{Conclusion}\label{sec:conclusion}
 
-To come back to the initial problem setting in this project it was attempted to pave the way for the creation of an AR handheld remote control for an autonomous excavator. The following two requirements were tackled:
+The initial problem setting in this project was to pave the way for the creation of an AR handheld remote control for an autonomous excavator. The following two requirements were tackled:
 
 \section{Data Transfer}\label{sec:conc_data_transfer}
 The proposed method in this work was to use an Unreal Engine multiplayer connection for the information sharing process. This seems to be a working solution with a few persisting obstacles which have to be worked around before implementing it in the pipeline. 
 
 \subsection{Checksum Inequality}\label{subsec:checksum_error}
 
-When the colocalization requirement is tackled using the Azure Spatial Anchor approach as described in \cref{ch:colocalization} then the problem of unequal checksums arises. This has to be worked around. Currently the two following options come to mind:
+When the colocalization requirement is tackled using the Azure Spatial Anchor approach as described in \cref{ch:colocalization} then the problem of unequal checksums arises. This has to be worked around. Currently the following options come to mind:
 \begin{itemize}
-    \item Reverse engineering the checksum in order to sequentally change update it and ideally reach the desired initial checksum again. (Due to limited documentation of the checksum generation this is mostly educated guesswork)
+    \item Sequentially changing the handheld game structure in order to reach the desired initial checksum again. (Due to limited documentation of the checksum generation this is mostly educated guesswork)
     \item Finding a way of manually overriding the generated checksum in the handheld UE instance
-    \item Making use of a different subsystem as for instance Steam\footnote{Steam Online Subsystem\url{https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/Online/Steam/}} provides. This option provides a robust solution with the drawback that one more piece of software is necessary on the excavator which naturally is undesirable.
+    \item Making use of a different subsystem as for instance Steam\footnote{Steam Online Subsystem\\ \url{https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/Online/Steam/}} provides. This option provides a robust solution with the drawback that one more piece of software is necessary on the excavator which naturally is undesirable.
 \end{itemize}
 
 \subsection{Unreliable Local Connection}\label{subsec:unrealiable_connection}
@@ -20,15 +20,17 @@ Throughout this project many different network settings were tested and even wit
 
 \section{Colocalization}\label{sec:conc_colocalization}
 
-There is of course a multitude of possibilities to accomplish colocalization between two camera origins. The Azure Spatial Anchor set up allows for quite an easy implementation as the colocalization process is handled completely by this module given the successfull creation and detection of such a spatial anchor.
+The Azure Spatial Anchor set up allows for quite an easy implementation as the colocalization process is handled completely by this module given the successful creation and detection of such a spatial anchor.
 
-As seen in \cref{sec:colocalization_testing} the anchor creation tends to have a shift in its location. Apart from this the colocalization pipeline seems very reliable with robustness regarding both ambient changes as well as repeatability.
+As seen in \cref{sec:colocalization_testing} the anchor creation tends to have a shift in its location. Apart from this the colocalization pipeline seems very reliable with robustness regarding both ambient changes as well as repeatability. As it is not apparent where this shift of the anchor location is introduced it would be best to perform tests with the actual excavator setup directly. 
 
 \section{Outlook}\label{sec:outlook}
 
-With the proof of concept of the state transfer in this manner it was possible to share information between the two systems. With this connection working any other piece of data can be converted into an Unreal Engine game component and shared in the same way. This very same connection can be used to transfer inputs from the handheld device up to the excavator given that the UE connection stays on a client-server basis.
+ With the state transfer connection working between the two UE instances any other piece of data can be converted into an Unreal Engine game component and shared in the same way. A more robust connection between the devices would be beneficial however.
+ 
+ This very same connection can be used to give orders from the handheld device to the excavator given that the UE connection remains a client-server relationship.
 
 As the inclusion of the Azure Spatial Anchor plugin renders the connection unviable for the time being this has to be looked into further as indicated in \cref{sec:conc_data_transfer}. Alternatively a different method for colocalization would be necessary. 
 
-So all in all this project provides two working modules for the key requirements handheld remote control of autonomous excavators.
+So all in all this project provides two individual modules that solve the two respective key requirements of handheld remote control for autonomous excavators. However for now there are still complications prohibiting this joint setup.
 
