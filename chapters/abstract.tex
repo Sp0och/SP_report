@@ -5,4 +5,8 @@ This project aimed at paving the way for the creation of a high level remote con
 
 The two key requirements for such an endeavour are first of all to be able to send data as well as inputs back and forth between the two devices. Secondly there are two camera views in this setup the AR view of the handheld device and the image input that the excavator receives. In order to precisely send geometric inputs from one device to the other colocalization is required. 
 
-The idea was to connect the handheld device making use of Unreal Engine game instances. For the excavator's side this was already setup. For the colocalization requirement the approach was to use Microsoft's Azure Spatial Anchors for a frictionless implementation between the two camera origins. Thus an additional goal was to further understand the capabilities of these less conventional methods for robotic applications.
+The idea was to connect the handheld device and the excavator through an Unreal Engine multiplayer connection as an Unreal Engine setup was already implemented on the excavator. For the colocalization requirement the idea was to make use of the possibilities that come through the AR setup. In this case Microsoft's Azure Spatial Anchors which allow for a very simple colocalization implementation.
+
+These methods were chosen to solve a specific task however it is also interesting to observe how these technologies that are less conventional in the robotic world interact with a robotic system.
+
+% The idea was to connect the handheld device making use of Unreal Engine game instances. For the excavator's side this was already setup. For the colocalization requirement the approach was to use Microsoft's Azure Spatial Anchors for a frictionless implementation between the two camera origins. Thus an additional goal was to further understand the capabilities of these less conventional methods for robotic applications.
